@@ -50,6 +50,15 @@ class LinkedQueue(QueueInterface):
 
         return self.front.data
 
+    def __repr__(self):
+        nodes = []
+        curr = self.front
+        while curr:
+            nodes.append(repr(curr))
+            curr = curr.next
+
+        return '[' + ', '.join(nodes) + ']'
+
 
 if __name__ == '__main__':
     queue = LinkedQueue()
