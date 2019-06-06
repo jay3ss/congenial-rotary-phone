@@ -5,7 +5,7 @@ from node import Node
 
 
 class SinglyLinkedList(ListInterface):
-    """Class defining a linked list"""
+    """Implements a linked-list"""
     def __init__(self):
         self.head = None
         self.length = 0
