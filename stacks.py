@@ -1,4 +1,4 @@
-"""Defines different implementations of stacks"""
+"""Different implementations of stacks"""
 from exceptions import EmptyException
 from interfaces import StackInterface
 from node import Node

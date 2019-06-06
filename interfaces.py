@@ -3,7 +3,7 @@ import abc
 
 
 class ListInterface(abc.ABC):
-    """Abstract base class that defines a stack"""
+    """Abstract base class that defines a list"""
     @abc.abstractmethod
     def clear(self):
         """Removes all entries from the list"""
