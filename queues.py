@@ -1,27 +1,7 @@
 """Defines different implementations of queues"""
-import abc
-
 from exceptions import EmptyException
+from interfaces import QueueInterface
 from node import Node
-
-
-class QueueInterface(abc.ABC):
-    """Defines the interface for a queue"""
-    @abc.abstractmethod
-    def is_empty(self):
-        """Determines if the queue is empty"""
-
-    @abc.abstractmethod
-    def dequeue(self):
-        """Removes an entry from the front of the queue"""
-
-    @abc.abstractmethod
-    def enqueue(self, entry):
-        """Adds a new entry to the back of the queue"""
-
-    @abc.abstractmethod
-    def peek(self):
-        """Returns the front of the queue"""
 
 
 class LinkedQueue(QueueInterface):
