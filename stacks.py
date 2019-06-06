@@ -1,27 +1,7 @@
 """Defines different implementations of stacks"""
-import abc
-
 from exceptions import EmptyException
+from interfaces import StackInterface
 from node import Node
-
-
-class StackInterface(abc.ABC):
-    """An abstract base class that defines a stack"""
-    @abc.abstractmethod
-    def is_empty(self):
-        """Determines if the stack is empty"""
-
-    @abc.abstractmethod
-    def peek(self):
-        """Returns the top of the stack"""
-
-    @abc.abstractmethod
-    def pop(self):
-        """Removes the top of the stack"""
-
-    @abc.abstractmethod
-    def push(self, entry):
-        """Adds a new entry to the top of the stack"""
 
 
 class LinkedStack(StackInterface):

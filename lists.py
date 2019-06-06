@@ -1,35 +1,7 @@
 """Defines different implementations of lists"""
-import abc
-
 from exceptions import InvalidPositionException
+from interfaces import ListInterface
 from node import Node
-
-
-class ListInterface(abc.ABC):
-    """Abstract base class that defines a stack"""
-    @abc.abstractmethod
-    def clear(self):
-        """Removes all entries from the list"""
-
-    @abc.abstractmethod
-    def entry(self, position):
-        """Returns the entry at the given position"""
-
-    @abc.abstractmethod
-    def insert(self, position, data):
-        """Inserts the data at a given position"""
-
-    @abc.abstractmethod
-    def is_empty(self):
-        """Determines if the list is empty"""
-
-    @abc.abstractmethod
-    def remove(self, position):
-        """Removes an entry at the given position"""
-
-    @abc.abstractmethod
-    def replace(self, position, data):
-        """Replaces an entry in the list at the desired position"""
 
 
 class SinglyLinkedList(ListInterface):
