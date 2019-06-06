@@ -58,17 +58,3 @@ class LinkedQueue(QueueInterface):
             curr = curr.next
 
         return '[' + ', '.join(nodes) + ']'
-
-
-if __name__ == '__main__':
-    queue = LinkedQueue()
-    queue.enqueue(1)
-
-    num_entries = 3
-    for i in range(2, num_entries+1):
-        queue.enqueue(i*i)
-
-    test_entry = num_entries * num_entries
-    entry = queue.peek()
-
-    queue.dequeue()
