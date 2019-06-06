@@ -1,4 +1,4 @@
-"""Defines different implementations of queues"""
+"""Different implementations of queues"""
 from exceptions import EmptyException
 from interfaces import QueueInterface
 from node import Node

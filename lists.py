@@ -1,4 +1,4 @@
-"""Defines different implementations of lists"""
+"""Different implementations of lists"""
 from exceptions import InvalidPositionException
 from interfaces import ListInterface
 from node import Node
