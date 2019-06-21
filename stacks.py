@@ -8,11 +8,10 @@ class LinkedStack(StackInterface):
     """Defines a link-based stack"""
     def __init__(self):
         self.top = None
-        self.length = 0
 
     def is_empty(self):
         """Determines if the stack is empty"""
-        return self.length == 0
+        return self.top is None
 
     def peek(self):
         """Returns the top of the stack"""
@@ -23,7 +22,7 @@ class LinkedStack(StackInterface):
 
     def pop(self):
         """Removes the top of the stack"""
-        can_pop = self.length > 0
+        can_pop = not self.is_empty()
         if can_pop:
             # Advance the top of the stack to the next node
             self.top = self.top.next
@@ -40,7 +39,6 @@ class LinkedStack(StackInterface):
             node.next = self.top
             self.top = node
 
-        self.length += 1
         return True
 
     def __repr__(self):
