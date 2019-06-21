@@ -61,6 +61,10 @@ class StackInterface(abc.ABC):
     @abc.abstractmethod
     def pop(self):
         """Removes the top of the stack"""
+        
+    @abc.abstractmethod
+    def push(self, entry):
+        """Adds data to the top of the stack"""
 
     @abc.abstractmethod
     def push(self, entry):
