@@ -29,11 +29,10 @@ class LinkedStack(StackInterface):
 
         return can_pop
 
-
     def push(self, entry):
         """Adds a new entry to the top of the stack"""
         node = Node(data=entry)
-        if not self.top:
+        if self.is_empty():
             self.top = node
         else:
             node.next = self.top
