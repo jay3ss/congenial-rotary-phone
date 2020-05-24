@@ -4,6 +4,7 @@ import pytest
 from exceptions import EmptyException
 from queues import LinkedQueue
 
+
 def test_empty_queue():
     """Tests the behavior of a new, empty queue
 
