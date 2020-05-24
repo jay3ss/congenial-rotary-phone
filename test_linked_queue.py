@@ -25,7 +25,7 @@ def test_empty_queue():
 
 
 def test_adding_and_removing_entries():
-    """Test the behavior of adding and removing entries to and fromt the
+    """Test the behavior of adding and removing entries to and from the
     queue.
 
     The axioms that are being tested are:
